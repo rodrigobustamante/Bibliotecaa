@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+</head>
+<body style="background-image: url('images/backgroundvideo.png');">
+	<video autoplay  muted id="bgvid" loop>
+  	<source src="images/video/VideoBackground.webm" type="video/webm">
+	<source src="images/video/VideoBackground.mp4" type="video/mp4">
+	</video>
+	<div class="container">
+	    <div class="row">
+	        <div class="col-sm-6 col-md-4 col-md-offset-4">
+	            <h1 style="color: white;" class="text-center login-title">Crea tu cuenta:</h1>
+	            <div class="alert alert-warning" role="alert"><p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Ojo: El usuario y la contraseña deben tener como mínimo 6 caracteres.</p></div>
+	            <div class="account-wall">
+	                <form action="registro.php" method="POST" class="form-signin">
+	                <input name="nombre" id="nombre" type="text" class="form-control" placeholder="Nombre" required autofocus>
+	                <span id="checkNombre"></span>
+              		<span id="mensaje_nombre"></span>
+	                <br>
+	                <input name="apellido" id="apellido" type="text" class="form-control" placeholder="Apellido" required>
+	                <span id="checkApellido"></span>
+	                <span id="mensaje_apellido"></span>
+	                <br>
+	                <input name="usuario" id="usuario" type="text" class="form-control" placeholder="Usuario" required>
+	                <span id="checkUsuario"></span>
+	                <span id="mensaje_usuario"></span>
+	                <br>
+	                <input name="pass" id="pass" type="password" class="form-control" placeholder="Contraseña" required>
+	                <span id="checkPass"></span>
+	                <span id="mensaje_pass"></span>
+	                <br>
+	                <input name="pass2" id="pass2" type="password" class="form-control" placeholder="Repetir Contraseña" required>
+	                <span id="checkPass2"></span>
+	                <span id="mensaje_pass2"></span>
+	                <br>
+	                <br>
+	                <button id="boton" class="btn btn-lg btn-primary btn-block" type="submit">Crear cuenta</button>
+	                </form>
+	            </div>
+	            <br>
+	            <a  href="login.html" class="btn btn-lg btn-primary btn-block">Cancelar</a>
+		    </div>
+		</div>
+		<br>
+		<footer class="footer">
+	        <p style="color: white;">© Liceo Pablo Neruda 2016</p>
+	    </footer>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/validaciones.js"></script>
+</body>
+</html>
